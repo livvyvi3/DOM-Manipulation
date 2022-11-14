@@ -1,0 +1,23 @@
+// colors 
+
+$whiteColor: rgb(255, 255, 255);
+$blackColor: rgb(12, 11, 11);
+$prmryFont: 'Popins', sans-serif;
+
+//Mixings 
+
+@mixin breakPoint($point) { 
+    @if $point == md {
+       // Medium devices (tablets, 768px and up)
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+    
+    @if $point == lg {
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 62em) {
+            @content;
+        }
+    }
+}

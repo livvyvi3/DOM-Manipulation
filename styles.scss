@@ -1,0 +1,63 @@
+@import './variables.scss';
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+*{
+    font-family: $prmryFont;
+    font-size: 16px;
+}
+
+body{
+    color: $whiteColor;
+    height: 100vh;
+    background: url('./src/images/project-1.jpg') no-repeat center center/ cover;
+    text-align: center;
+    display: flex;
+
+    .container{
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .heading{
+        background-color: #262626;
+        font-size: 24px;
+        border: solid 2px $whiteColor;
+        border-radius: 5px;
+        width: 35%;
+        padding: 5px;
+        margin-bottom: 32px;
+    }
+    .card{
+        max-height: 250px;
+        min-width: 250px;
+        padding: 30px 5px;
+        margin: auto 5px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 10px;
+        align-items: center;
+    }
+
+    .card-text{
+        color: $blackColor;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .author{
+        color: pink;
+        text-transform: uppercase;
+    }
+
+    .btn{
+        background-color: $blackColor; 
+        max-width: 120px;       
+    }
+    .btn:hover{
+        background-color: grey;        
+    }
+
+    
+}
+
+

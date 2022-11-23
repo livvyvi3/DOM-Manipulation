@@ -1,63 +1,68 @@
 @import './variables.scss';
 @import "./node_modules/bootstrap/scss/bootstrap";
 
-*{
+* {
     font-family: $prmryFont;
     font-size: 16px;
 }
 
-body{
-    color: $whiteColor;
+body {
+    
     height: 100vh;
-    background: url('./src/images/project-1.jpg') no-repeat center center/ cover;
+    background: url('./src/images/project-2.jpg') no-repeat center center/ cover;
     text-align: center;
     display: flex;
 
-    .container{
-        align-items: center;
+    .modal {
+        display: none;     /* Hidden by default */
+        position: fixed;    /* Stay in place */
+        z-index: 1;   /* Sit on top */
+        padding-top: 100px;  /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;    /* Full width */
+        height: 100%;    /* Full height */
+        overflow: auto;  /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);     /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);   /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
         margin: auto;
-        justify-content: center;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        height: 7rem;
     }
 
-    .heading{
-        background-color: #262626;
-        font-size: 24px;
-        border: solid 2px $whiteColor;
-        border-radius: 5px;
-        width: 35%;
-        padding: 5px;
-        margin-bottom: 32px;
-    }
-    .card{
-        max-height: 250px;
-        min-width: 250px;
-        padding: 30px 5px;
-        margin: auto 5px;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 10px;
-        align-items: center;
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
     }
 
-    .card-text{
-        color: $blackColor;
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-    .author{
-        color: pink;
-        text-transform: uppercase;
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
 
-    .btn{
-        background-color: $blackColor; 
-        max-width: 120px;       
-    }
-    .btn:hover{
-        background-color: grey;        
+    .btn {
+        background-color: transparent;
+        max-width: 120px;
+        border-color: antiquewhite;
+        color: antiquewhite;
     }
 
-    
+    .btn:hover {
+        background-color: antiquewhite;
+        color: rgb(43, 39, 39);
+    }
+
+
 }
-
-
